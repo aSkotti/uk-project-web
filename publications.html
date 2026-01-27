@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Engineering of Data Analysis Pipelines - Publications</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span style="font-weight: 600; color: var(--primary-red); font-size: 1.5rem;">Ch-RIGID</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="people.html">People</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="publications.html">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="software.html">Software</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-content">
+        <div class="content-section">
+            <div class="container">
+                <h2 class="section-header" id="publications">Publications</h2>
+                
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="publication-item">
+                            <div class="publication-title">Comparing R Bytecode Compilers Written in R, Java, and Rust</div>
+                            <div class="publication-authors">P. Donat-Bouillud, F. Křikava, J. Hain, A. Plodek, J. Vitek</div>
+                            <div class="publication-venue">Companion Proceedings of the 9th International Conference on the Art, Science, and Engineering of Programming (Programming 2025), pp. 1:1–1:6, 2025</div>
+                            <div id="abstract1" class="publication-abstract">
+                                <p class="abstract-placeholder">Abstract will be added here.</p>
+                            </div>
+                            <div class="publication-links">
+                                <a href="https://drops.dagstuhl.de/entities/document/10.4230/OASIcs.Programming.2025.1" target="_blank" class="pub-link">Link</a>
+                                <a href="https://doi.org/10.4230/OASIcs.Programming.2025.1" target="_blank" class="pub-link secondary">DOI</a>
+                                <button class="pub-link secondary" onclick="showBibtex('bibtex1')">BibTeX</button>
+                            </div>
+                            <div id="bibtex1" class="bibtex-content" style="display: none;">
+                                <pre>@inproceedings{donatbouillud_comparing_2025,
+    title = {{Comparing R Bytecode Compilers Written in R, Java, and Rust}},
+    author = {Donat-Bouillud, Pierre and Křikava, Filip and Hain, Jakob and Plodek, Adam and Vitek, Jan},
+    year = {2025},
+    booktitle = {{Companion Proceedings of the 9th International Conference on the Art, Science, and Engineering of Programming (Programming 2025)}},
+    editor = {Edwards, Jonathan and Perera, Roly and Petricek, Tomas},
+    publisher = {Schloss Dagstuhl -- Leibniz-Zentrum für Informatik},
+    series = {{Open Access Series in Informatics (OASIcs)}},
+    location = {Dagstuhl, Germany},
+    doi = {10.4230/OASIcs.Programming.2025.1},
+    isbn = {978-3-95977-382-9},
+    pages = {1:1--1:6},
+    url = {https://drops.dagstuhl.de/entities/document/10.4230/OASIcs.Programming.2025.1},
+    volume = {134},
+}</pre>
+                            </div>
+                        </div>
+                        
+                        <div class="publication-item">
+                            <div class="publication-title">Copy-and-Patch Just-in-Time Compiler for R</div>
+                            <div class="publication-authors">M. Kocourek, F. Křikava, J. Vitek</div>
+                            <div class="publication-venue">Proceedings of the 17th ACM SIGPLAN International Workshop on Virtual Machines and Intermediate Languages, pp. 12–21, 2025</div>
+                            <div id="abstract2" class="publication-abstract">
+                                <p class="abstract-text">Copy-and-patch is a technique for building baseline just-in-time compilers from existing interpreters. It has been successfully applied to languages such as Lua and Python. This paper reports on our experience using this technique to implement a compiler for the R programming language. We describe how this new compiler integrates with the GNU R virtual machine, present the key optimizations we implemented, and evaluate the feasibility of this approach for R. Copy-and-patch also allows extensions such as integration of the feedback recording required by multi-tier compilation. Our evaluation on 57 programs demonstrates very fast compilation times (980 bytecode instructions per millisecond), reasonable performance gains (1.15x–1.91x speedup over GNU R), and manageable implementation complexity.</p>
+                            </div>
+                            <div class="publication-links">
+                                <a href="https://doi.org/10.1145/3759548.3763370" target="_blank" class="pub-link">Link</a>
+                                <a href="https://doi.org/10.1145/3759548.3763370" target="_blank" class="pub-link secondary">DOI</a>
+                                <button class="pub-link secondary" onclick="showBibtex('bibtex2')">BibTeX</button>
+                            </div>
+                            <div id="bibtex2" class="bibtex-content" style="display: none;">
+                                <pre>@inproceedings{kocourek_copyandpatch_2025,
+    title = {{Copy-and-Patch Just-in-Time Compiler for R}},
+    author = {Kocourek, Matěj and Křikava, Filip and Vitek, Jan},
+    year = {2025},
+    booktitle = {{Proceedings of the 17th ACM SIGPLAN International Workshop on Virtual Machines and Intermediate Languages}},
+    publisher = {Association for Computing Machinery},
+    series = {{VMIL '25}},
+    location = {New York, NY, USA},
+    doi = {10.1145/3759548.3763370},
+    isbn = {979-8-4007-2164-9},
+    pages = {12--21},
+    url = {https://doi.org/10.1145/3759548.3763370},
+}</pre>
+                            </div>
+                        </div>
+                        
+                        <div class="publication-item">
+                            <div class="publication-title">R4R: Reproducibility for R</div>
+                            <div class="publication-authors">P. Donat-Bouillud, F. Křikava, S. Krynski, J. Vitek</div>
+                            <div class="publication-venue">Proceedings of the 3rd ACM Conference on Reproducibility and Replicability, pp. 132–142, 2025</div>
+                            <div id="abstract3" class="publication-abstract">
+                                <p class="abstract-placeholder">Abstract will be added here.</p>
+                            </div>
+                            <div class="publication-links">
+                                <a href="https://doi.org/10.1145/3736731.3746156" target="_blank" class="pub-link">Link</a>
+                                <a href="https://doi.org/10.1145/3736731.3746156" target="_blank" class="pub-link secondary">DOI</a>
+                                <button class="pub-link secondary" onclick="showBibtex('bibtex3')">BibTeX</button>
+                            </div>
+                            <div id="bibtex3" class="bibtex-content" style="display: none;">
+                                <pre>@inproceedings{donatbouillud_r4r_2025,
+    title = {{R4R: Reproducibility for R}},
+    author = {Donat-Bouillud, Pierre and Křikava, Filip and Krynski, Sebastian and Vitek, Jan},
+    year = {2025},
+    booktitle = {{Proceedings of the 3rd ACM Conference on Reproducibility and Replicability}},
+    publisher = {Association for Computing Machinery},
+    series = {{ACM REP '25}},
+    location = {New York, NY, USA},
+    doi = {10.1145/3736731.3746156},
+    isbn = {9798400719585},
+    pages = {132--142},
+    url = {https://doi.org/10.1145/3736731.3746156},
+}</pre>
+                            </div>
+                        </div>
+                        
+                        <div class="publication-item">
+                            <div class="publication-title">Toward a Typed Intermediate Language for R</div>
+                            <div class="publication-authors">M. Laurent, J. Hain, F. Krikava, S. Krynski, J. Vitek</div>
+                            <div class="publication-venue">Companion Proceedings of the 9th International Conference on the Art, Science, and Engineering of Programming (Programming 2025), pp. 24:1–24:4, 2025</div>
+                            <div id="abstract4" class="publication-abstract">
+                                <p class="abstract-placeholder">Abstract will be added here.</p>
+                            </div>
+                            <div class="publication-links">
+                                <a href="https://drops.dagstuhl.de/entities/document/10.4230/OASIcs.Programming.2025.24" target="_blank" class="pub-link">Link</a>
+                                <a href="https://doi.org/10.4230/OASIcs.Programming.2025.24" target="_blank" class="pub-link secondary">DOI</a>
+                                <button class="pub-link secondary" onclick="showBibtex('bibtex4')">BibTeX</button>
+                            </div>
+                            <div id="bibtex4" class="bibtex-content" style="display: none;">
+                                <pre>@inproceedings{laurent_toward_2025,
+    title = {{Toward a Typed Intermediate Language for R}},
+    author = {Laurent, Mickaël and Hain, Jakob and Krikava, Filip and Krynski, Sebastián and Vitek, Jan},
+    year = {2025},
+    booktitle = {{Companion Proceedings of the 9th International Conference on the Art, Science, and Engineering of Programming (Programming 2025)}},
+    editor = {Edwards, Jonathan and Perera, Roly and Petricek, Tomas},
+    publisher = {Schloss Dagstuhl -- Leibniz-Zentrum für Informatik},
+    series = {{Open Access Series in Informatics (OASIcs)}},
+    location = {Dagstuhl, Germany},
+    doi = {10.4230/OASIcs.Programming.2025.24},
+    isbn = {978-3-95977-382-9},
+    pages = {24:1--24:4},
+    url = {https://drops.dagstuhl.de/entities/document/10.4230/OASIcs.Programming.2025.24},
+    volume = {134},
+}</pre>
+                            </div>
+                        </div>
+                        
+                        <div class="publication-item">
+                            <div class="publication-title">Decidable Subtyping of Existential Types for Julia</div>
+                            <div class="publication-authors">J. Belyakova, B. Chung, R. Tate, J. Vitek</div>
+                            <div class="publication-venue">Proc. ACM Program. Lang. 8(PLDI), pp. 191:1091–191:1114, 2024</div>
+                            <div id="abstract5" class="publication-abstract">
+                                <p class="abstract-placeholder">Abstract will be added here.</p>
+                            </div>
+                            <div class="publication-links">
+                                <a href="https://dl.acm.org/doi/10.1145/3656421" target="_blank" class="pub-link">Link</a>
+                                <a href="https://doi.org/10.1145/3656421" target="_blank" class="pub-link secondary">DOI</a>
+                                <button class="pub-link secondary" onclick="showBibtex('bibtex5')">BibTeX</button>
+                            </div>
+                            <div id="bibtex5" class="bibtex-content" style="display: none;">
+                                <pre>@article{belyakova_decidable_2024,
+    title = {{Decidable Subtyping of Existential Types for Julia}},
+    author = {Belyakova, Julia and Chung, Benjamin and Tate, Ross and Vitek, Jan},
+    year = {2024},
+    journal = {{Proc. ACM Program. Lang.}},
+    number = {PLDI},
+    doi = {10.1145/3656421},
+    pages = {191:1091--191:1114},
+    url = {https://dl.acm.org/doi/10.1145/3656421},
+    volume = {8},
+}</pre>
+                            </div>
+                        </div>
+                        
+                        <div class="publication-item">
+                            <div class="publication-title">Reducing Feedback Pollution</div>
+                            <div class="publication-authors">S. Krynski, M. Štěpánek, F. Říha, F. Křikava, J. Vitek</div>
+                            <div class="publication-venue">Proceedings of the 16th ACM SIGPLAN International Workshop on Virtual Machines and Intermediate Languages, pp. 65–74, 2024</div>
+                            <div id="abstract6" class="publication-abstract">
+                                <p class="abstract-placeholder">Abstract will be added here.</p>
+                            </div>
+                            <div class="publication-links">
+                                <a href="https://doi.org/10.1145/3689490.3690404" target="_blank" class="pub-link">Link</a>
+                                <a href="https://doi.org/10.1145/3689490.3690404" target="_blank" class="pub-link secondary">DOI</a>
+                                <button class="pub-link secondary" onclick="showBibtex('bibtex6')">BibTeX</button>
+                            </div>
+                            <div id="bibtex6" class="bibtex-content" style="display: none;">
+                                <pre>@inproceedings{krynski_reducing_2024,
+    title = {{Reducing Feedback Pollution}},
+    author = {Krynski, Sebastián and Štěpánek, Michal and Říha, Filip and Křikava, Filip and Vitek, Jan},
+    year = {2024},
+    booktitle = {{Proceedings of the 16th ACM SIGPLAN International Workshop on Virtual Machines and Intermediate Languages}},
+    publisher = {Association for Computing Machinery},
+    series = {{VMIL '24}},
+    location = {New York, NY, USA},
+    doi = {10.1145/3689490.3690404},
+    isbn = {979-8-4007-1213-5},
+    pages = {65--74},
+    url = {https://doi.org/10.1145/3689490.3690404},
+}</pre>
+                            </div>
+                        </div>
+                        
+                        <div class="publication-item">
+                            <div class="publication-title">The Fault in Our Stars: Designing Reproducible Large-scale Code Analysis Experiments</div>
+                            <div class="publication-authors">P. Maj, S. Muroya, K. Siek, L. Di Grazia, J. Vitek</div>
+                            <div class="publication-venue">ECOOP 2024, 2024</div>
+                            <div id="abstract7" class="publication-abstract">
+                                <p class="abstract-placeholder">Abstract will be added here.</p>
+                            </div>
+                            <div class="publication-links">
+                                <a href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ECOOP.2024.27" target="_blank" class="pub-link">Link</a>
+                                <a href="https://doi.org/10.4230/LIPIcs.ECOOP.2024.27" target="_blank" class="pub-link secondary">DOI</a>
+                                <button class="pub-link secondary" onclick="showBibtex('bibtex7')">BibTeX</button>
+                            </div>
+                            <div id="bibtex7" class="bibtex-content" style="display: none;">
+                                <pre>@inproceedings{maj_fault_2024,
+    title = {{The Fault in Our Stars: Designing Reproducible Large-scale Code Analysis Experiments}},
+    author = {Maj, Petr and Muroya, Stefanie and Siek, Konrad and Di Grazia, Luca and Vitek, Jan},
+    year = {2024},
+    booktitle = {{DROPS-IDN/v2/document/10.4230/LIPIcs.ECOOP.2024.27}},
+    publisher = {Schloss Dagstuhl -- Leibniz-Zentrum für Informatik},
+    doi = {10.4230/LIPIcs.ECOOP.2024.27},
+    url = {https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ECOOP.2024.27},
+    shorttitle = {The Fault in Our Stars},
+}</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="footer-logos">
+                        <div class="footer-logo">
+                            <a href="">
+                                <img src="images/logo/erc_logo_inv.png" alt="">
+                            </a>
+                        </div>
+                        <div class="footer-logo">
+                            <a href="https://erc.europa.eu/">
+                                <img src="images/logo/eu_flag_round-nobg.png" alt="">
+                            </a>
+                        </div>
+                        <div class="footer-logo charles">
+                            <a href="">
+                                <img src="images/logo/PR-56-version1-uk_uzitna_eng_barevna (1).png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">&copy; 2026 Ch-RIGID. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"></button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function showBibtex(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+        
+        function toggleAbstract(id) {
+            var abstractDiv = document.getElementById(id);
+            var abstractText = abstractDiv.querySelector('.abstract-text');
+            var toggleBtn = abstractDiv.querySelector('.abstract-toggle');
+            
+            if (abstractText.classList.contains('abstract-truncated')) {
+                abstractText.classList.remove('abstract-truncated');
+                abstractText.style.maxHeight = 'none';
+                toggleBtn.textContent = 'Show less';
+            } else {
+                abstractText.classList.add('abstract-truncated');
+                var lineHeight = parseFloat(window.getComputedStyle(abstractText).lineHeight);
+                abstractText.style.maxHeight = (lineHeight * 3) + 'px';
+                toggleBtn.textContent = 'Show more';
+            }
+        }
+        
+        // Initialize abstracts on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            var abstracts = document.querySelectorAll('.publication-abstract .abstract-text');
+            abstracts.forEach(function(abstract) {
+                var abstractDiv = abstract.closest('.publication-abstract');
+                var lineHeight = parseFloat(window.getComputedStyle(abstract).lineHeight);
+                var maxHeight = lineHeight * 3; // 3 lines
+                
+                if (abstract.scrollHeight > maxHeight) {
+                    abstract.classList.add('abstract-truncated');
+                    abstract.style.maxHeight = maxHeight + 'px';
+                    
+                    // Add toggle button if it doesn't exist
+                    if (!abstractDiv.querySelector('.abstract-toggle')) {
+                        var toggleBtn = document.createElement('button');
+                        toggleBtn.className = 'abstract-toggle';
+                        toggleBtn.textContent = 'Show more';
+                        toggleBtn.onclick = function() {
+                            toggleAbstract(abstractDiv.id);
+                        };
+                        abstractDiv.appendChild(toggleBtn);
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
