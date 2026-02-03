@@ -493,6 +493,85 @@ html {
     line-height: 1.6;
 }
 
+/* People Grid - Simple Cards */
+.people-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.person-card-simple {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.person-img-simple {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #f1f5f9;
+    border: 3px solid var(--primary-red);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.person-img-simple img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.person-name-simple {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-red);
+    margin-bottom: 0.5rem;
+}
+
+.person-title-simple {
+    color: var(--text-muted);
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.person-email-simple {
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+    font-size: 0.9rem;
+}
+
+.person-email-simple a {
+    color: var(--text-dark);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.person-email-simple a:hover {
+    color: var(--primary-red);
+}
+
+.person-about-simple {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-top: auto;
+}
+
+.person-about-simple p {
+    margin: 0;
+}
+
 /* Publications */
 .publication-year-header {
     color: var(--primary-red);
@@ -561,7 +640,7 @@ html {
 }
 
 .abstract-text.abstract-truncated {
-    max-height: 4.5em;
+    max-height: 3em;
     overflow: hidden;
     position: relative;
 }
@@ -651,14 +730,31 @@ html {
     word-wrap: break-word;
 }
 
+/* Software Grid - Pinterest Masonry Layout */
+.software-grid {
+    column-count: 2;
+    column-gap: 1.5rem;
+    column-fill: balance;
+}
+
+.software-card-wrapper {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    width: 100%;
+}
+
 /* Software Cards */
 .software-card {
     background: white;
     border-radius: 8px;
     padding: 2rem;
-    margin-bottom: 2rem;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
     text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .software-title {
@@ -666,6 +762,12 @@ html {
     font-weight: 600;
     color: var(--primary-red);
     margin-bottom: 1rem;
+    flex-shrink: 0;
+}
+
+.software-card p {
+    flex-grow: 1;
+    margin-bottom: 1.5rem;
 }
 
 .software-buttons {
@@ -685,12 +787,19 @@ html {
     font-size: 0.85rem;
     font-weight: 500;
     transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
 }
 
 .softw-link:hover {
     background: var(--primary-red);
     color: white;
     border-color: var(--primary-red);
+}
+
+.softw-link.github-link svg {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 /* Contact Page */
@@ -818,6 +927,11 @@ footer {
 
 .footer-logo.charles {
     width: 160px;
+}
+
+.footer-logo.msmt {
+    width: 80px;
+    height: 80px;
 }
 
 /* Back to Top Button */
@@ -1000,5 +1114,14 @@ a {
     .contact-description {
         font-size: 1rem;
         margin-bottom: 2rem;
+    }
+    
+    .software-grid {
+        column-count: 1;
+    }
+    
+    .people-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 }
