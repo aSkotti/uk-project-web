@@ -572,6 +572,47 @@ html {
     margin: 0;
 }
 
+/* People Details List */
+.people-details {
+    margin-top: 3rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.person-detail {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.person-detail:last-child {
+    border-bottom: none;
+}
+
+.person-detail-name {
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--text-dark);
+    margin-bottom: 0.2rem;
+}
+
+.person-detail-name a {
+    color: var(--primary-red);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.person-detail-name a:hover {
+    color: var(--dark-red);
+    text-decoration: underline;
+}
+
+.person-detail-role {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
 /* Publications */
 .publication-year-header {
     color: var(--primary-red);
