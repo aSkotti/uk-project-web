@@ -14,7 +14,7 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <span style="font-weight: 600; color: var(--primary-red); font-size: 1.5rem;">Ch-RiGiD</span>
+                <span style="font-weight: 600; color: var(--primary-red); font-size: 1.5rem;">ChRiGiD</span>
             </a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -49,8 +49,9 @@
             <div class="hero-content">
                 <div class="hero-text-wrapper">
                     <h1>Engineering of Data Analysis Pipelines</h1>
-                    <p class="hero-subtitle">Ch-RiGiD</p>
-                    <p class="lead">An R&D project funded by the ERC CZ programme and conducted at the Faculty of Mathematics and Physics, Charles University, focusing on data science, program analysis, verification, testing, compilers, and software engineering.</p>
+                    <p class="hero-subtitle">ChRiGiD</p>
+                    <p class="lead">The RiGiD project aims to develop a practical methodology for improving the reliability of data analysis pipelines written in R. Starting from the observation that computer science has failed to produce tools usable by working data scientists, the project combines large-scale empirical study of real-world code with the development of lightweight specification techniques — notably gradual typing — automated testing, and reproducibility support. The goal is not formal correctness but a pragmatic reduction in the incidence of errors across all stages of data analysis, from data acquisition and cleaning to statistical modeling and reporting.</p>
+                    <p class="lead">An R&D project funded by the Czech Ministry of Education, Youth, and Sports under the ERC CZ programme (grant LL2325) and conducted at the Faculty of Mathematics and Physics, Charles University.</p>
                 </div>
                 <div class="hero-actions">
                     <a href="publications.html#publications" class="btn-hero btn-primary">View Publications</a>
@@ -59,40 +60,46 @@
             </div>
         </div>
     </section>
-    
-    <!-- About Section -->
-    <section class="about-section">
+
+    <!-- Research Directions Section -->
+    <section class="content-section">
         <div class="container">
-            <h2 class="section-header">About Our Project</h2>
-            
-            <div class="research-content full-width-content">
-                <div class="main-description full-width">
-                    <p class="lead-text">Computer science failed, as a discipline, at producing tools and methodologies that can be adopted by working data scientists. The goal of Ch-RiGiD is to identify some of the most impactful errors and to develop a methodology for rigorous engineering data analysis pipelines that can be adopted in practice. We aim to reduce the potential for errors and increase our confidence in results while retaining ease of use.</p>
-                    
-                    <p>First, identify the problem by studying a large corpus of code used for data analysis. This phase of the project will contribute a classification of errors, as well as their frequencies and severity. We will develop novel program analysis techniques that blend static and dynamic analyses to account for the nature of the data science codes.</p>
-                    
-                    <p>Second, propose a methodology for developing data science applications that decreases errors and increases reproducibility and accountability. The outcomes here will be tools and techniques for improving the correctness of our target applications.</p>
-                    
-                    <p>Third, evaluate the proposal by conducting user studies. The contribution of this part of the project will be the deployment of our tools using automated techniques and the empirical evaluation of their efficacy.</p>
+            <h2 class="section-header">Research Directions</h2>
+            <div class="highlights-grid" style="grid-template-columns: repeat(3, 1fr);">
+                <div class="highlight-card data-science">
+                    <h3>Practical Data Science</h3>
+                    <p>Understanding how data scientists work and where things go wrong. Through user studies, interviews, and large-scale analysis of real-world R code, we catalog error patterns across all stages of the data analysis process — from data acquisition and cleaning to modeling and reporting.</p>
+                </div>
+                <div class="highlight-card type-systems">
+                    <h3>Type Systems</h3>
+                    <p>Developing type systems that catch errors in dynamic languages without getting in the way. We explore gradual typing, set-theoretic types, and type inference techniques that accommodate the idioms data scientists actually use — data frames, implicit conversions, and multiple object systems.</p>
+                </div>
+                <div class="highlight-card tools-languages">
+                    <h3>Tools and Languages</h3>
+                    <p>Building the compilers, runtime systems, and development tools that make it all work. This includes JIT compilation for R, automated test generation, reproducibility infrastructure, and data lineage tracking for auditing results.</p>
                 </div>
             </div>
+        </div>
+    </section>
 
+    <section class="about-section">
+        <div class="container">
             <div class="highlights-section">
                 <div class="highlights-grid">
                     <div class="highlight-card">
                         <h3>Project at a Glance</h3>
                         <ul class="highlight-list">
-                            <li>International research team</li>
-                            <li>5 peer-reviewed publications and 4 open-source artifacts in 2025</li>
+                            <li>International research team (CZ, CH, PL, US, FR)</li>
+                            <li>9 peer-reviewed publications in 2025</li>
                             <li>Open-source software released under Apache 2.0, MIT, GPL-3.0, and public-domain licenses</li>
-                            <li>Selected to host SPLASH 2027 – first time in Central Europe</li>
+                            <li>Selected to host SPLASH 2027</li>
                         </ul>
                     </div>
 
                     <div class="highlight-card">
                         <h3>Collaboration & International Engagement</h3>
                         <p>The project maintains strong international collaboration across Europe, North America, and Asia. Nearly all publications are the result of cross-institutional research efforts.</p>
-                        <p>We co-organize the International Summer School on Programming Languages (PLISS), an influential training event for early-career researchers. In 2027, we will host SPLASH (ACM SIGPLAN International Conference on Systems, Programming, Languages and Applications), marking the first time this premier conference will take place in Central Europe.</p>
+                        <p>We co-organize the <a href="https://pliss.org" target="_blank">International Summer School on Programming Languages (PLISS)</a>, an influential training event for early-career researchers. In 2027, we will host <a href="https://splashcon.org" target="_blank">SPLASH</a>, marking the first time this premier conference will take place in Central Europe.</p>
                         <p>We also actively host visiting researchers and organize joint research meetings between Charles University and Czech Technical University, strengthening the Czech programming languages research ecosystem.</p>
                     </div>
                 </div>
@@ -171,7 +178,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 text-md-end">
-                    <p class="mb-0">&copy; 2026 Ch-RiGiD. All rights reserved.</p>
+                    <p class="mb-0">&copy; 2026 ChRiGiD. All rights reserved.</p>
                 </div>
             </div>
         </div>

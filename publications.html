@@ -14,7 +14,7 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <span style="font-weight: 600; color: var(--primary-red); font-size: 1.5rem;">Ch-RiGiD</span>
+                <span style="font-weight: 600; color: var(--primary-red); font-size: 1.5rem;">ChRiGiD</span>
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -51,6 +51,13 @@
                 <div class="row">
                     <div class="col-lg-12">
 
+                        <div class="research-legend" style="margin-bottom: 1.5rem; display: flex; gap: 1.5rem; flex-wrap: wrap;">
+                            <span><span class="research-dot data-science"></span> Practical Data Science</span>
+                            <span><span class="research-dot type-systems"></span> Type Systems</span>
+                            <span><span class="research-dot tools-languages"></span> Tools and Languages</span>
+                            <span><span class="research-dot misc"></span> Misc</span>
+                        </div>
+
                         <!-- ==================== 2026 ==================== -->
                         <h3 class="publication-year-header">2026</h3>
 
@@ -59,7 +66,7 @@
                                 <a href="publications/laurent_typed_ir_2025.pdf" target="_blank" class="pub-link">PDF</a>
                                 <button class="pub-link secondary" onclick="showBibtex('bibtex_laurent_typed_ir')">BibTeX</button>
                             </div>
-                            <div class="publication-title">A Typed Intermediate Representation for Dynamic Languages</div>
+                            <div class="publication-title"><span class="research-dot type-systems"></span>A Typed Intermediate Representation for Dynamic Languages</div>
                             <div class="publication-authors">M. Laurent, J. Hain, F. Křikava, S. Krynski, J. Vitek</div>
                             <div class="publication-venue">ACM Transactions on Programming Languages and Systems (TOPLAS), under review</div>
                             <div id="abstract_laurent_typed_ir" class="publication-abstract">
@@ -82,7 +89,7 @@
                                 <a href="https://doi.org/10.4230/LIPIcs.CVIT.2016.23" target="_blank" class="pub-link secondary">DOI</a>
                                 <button class="pub-link secondary" onclick="showBibtex('bibtex_laurent_kururin')">BibTeX</button>
                             </div>
-                            <div class="publication-title">Finding Shortest Walks in Kuru Kuru Kururin</div>
+                            <div class="publication-title"><span class="research-dot misc"></span>Finding Shortest Walks in Kuru Kuru Kururin</div>
                             <div class="publication-authors">M. Laurent, M. Mallem</div>
                             <div class="publication-venue">13th International Conference on Fun with Algorithms (FUN 2026), LIPIcs, 2026</div>
                             <div id="abstract_laurent_kururin" class="publication-abstract">
@@ -105,9 +112,12 @@
                                 <a href="publications/laurent_stt_implem_2025.pdf" target="_blank" class="pub-link">PDF</a>
                                 <button class="pub-link secondary" onclick="showBibtex('bibtex_laurent_stt')">BibTeX</button>
                             </div>
-                            <div class="publication-title">Implementing Set-Theoretic Types</div>
+                            <div class="publication-title"><span class="research-dot type-systems"></span>Implementing Set-Theoretic Types</div>
                             <div class="publication-authors">M. Laurent, K. Nguyễn</div>
                             <div class="publication-venue">Under review, 2026</div>
+                            <div id="abstract_laurent_stt" class="publication-abstract">
+                                <p class="abstract-text">Set-theoretic types provide a rich type algebra that supports unrestricted unions, intersections, and negations, together with a decidable type constraint-solving algorithm known as tallying. These types are particularly well suited for typing dynamic languages, where functions often exhibit both generic and overloaded behavior. However, the complexity of their implementation has hindered their widespread adoption. In this paper, we introduce a modular representation for set-theoretic types and revisit the algorithms for subtyping and tallying. We compare our approach with the historical CDuce implementation and evaluate the performance impact of some optimizations and design choices.</p>
+                            </div>
                             <div id="bibtex_laurent_stt" class="bibtex-content" style="display: none;">
                                 <pre>@misc{laurent_stt_2026,
     title = {{Implementing Set-Theoretic Types}},
@@ -124,7 +134,7 @@
                                 <a href="https://doi.org/10.48550/arXiv.2602.00033" target="_blank" class="pub-link secondary">DOI</a>
                                 <button class="pub-link secondary" onclick="showBibtex('bibtex_new6')">BibTeX</button>
                             </div>
-                            <div class="publication-title">Mapping the Stochastic Penal Colony</div>
+                            <div class="publication-title"><span class="research-dot data-science"></span>Mapping the Stochastic Penal Colony</div>
                             <div class="publication-authors">R. Grimm</div>
                             <div class="publication-venue">arXiv preprint, 2026</div>
                             <div id="abstract_new6" class="publication-abstract">
@@ -150,7 +160,7 @@
                                 <a href="https://doi.org/10.1007/978-3-032-08187-2_11" target="_blank" class="pub-link secondary">DOI</a>
                                 <button class="pub-link secondary" onclick="showBibtex('bibtex_d1')">BibTeX</button>
                             </div>
-                            <div class="publication-title">On the Limits of Making Programming Easy</div>
+                            <div class="publication-title"><span class="research-dot data-science"></span>On the Limits of Making Programming Easy</div>
                             <div class="publication-authors">T. Petříček, J. Jakubovic</div>
                             <div class="publication-venue">Languages, Compilers, Analysis -- From Beautiful Theory to Useful Practice (Festschrift), Springer, 2026</div>
                             <div id="abstract_d1" class="publication-abstract">
@@ -176,7 +186,7 @@
                                 <a href="publications/laurent_type_inference_imp_2025.pdf" target="_blank" class="pub-link">PDF</a>
                                 <button class="pub-link secondary" onclick="showBibtex('bibtex_laurent_typeinf_imp')">BibTeX</button>
                             </div>
-                            <div class="publication-title">Type Inference for Functional and Imperative Dynamic Languages</div>
+                            <div class="publication-title"><span class="research-dot type-systems"></span>Type Inference for Functional and Imperative Dynamic Languages</div>
                             <div class="publication-authors">M. Laurent, J. Vitek</div>
                             <div class="publication-venue">OOPSLA 2026 (accepted)</div>
                             <div id="abstract_laurent_typeinf_imp" class="publication-abstract">
@@ -202,7 +212,7 @@
                                 <a href="https://doi.org/10.1109/ICPC66645.2025.00048" target="_blank" class="pub-link secondary">DOI</a>
                                 <button class="pub-link secondary" onclick="showBibtex('bibtex_d3')">BibTeX</button>
                             </div>
-                            <div class="publication-title">Combining Static Analysis Techniques for Program Comprehension Using Slicito</div>
+                            <div class="publication-title"><span class="research-dot tools-languages"></span>Combining Static Analysis Techniques for Program Comprehension Using Slicito</div>
                             <div class="publication-authors">R. Husak, J. Kofroň, F. Zavoral</div>
                             <div class="publication-venue">Proceedings of the 33rd International Conference on Program Comprehension (ICPC 2025)</div>
                             <div id="abstract_d3" class="publication-abstract">
@@ -222,42 +232,11 @@
 
                         <div class="publication-item">
                             <div class="publication-links">
-                                <a href="publications/donatbouillud_comparing_r_2025.pdf" target="_blank" class="pub-link">PDF</a>
-                                <a href="https://doi.org/10.4230/OASIcs.Programming.2025.1" target="_blank" class="pub-link secondary">DOI</a>
-                                <button class="pub-link secondary" onclick="showBibtex('bibtex1')">BibTeX</button>
-                            </div>
-                            <div class="publication-title">Comparing R Bytecode Compilers Written in R, Java, and Rust</div>
-                            <div class="publication-authors">P. Donat-Bouillud, F. Křikava, J. Hain, A. Plodek, J. Vitek</div>
-                            <div class="publication-venue">Companion Proceedings of the 9th International Conference on the Art, Science, and Engineering of Programming (Programming 2025)</div>
-                            <div id="abstract1" class="publication-abstract">
-                                <p class="abstract-text">This paper presents a comparative analysis of three implementations of the R bytecode compiler: the official R implementation, a Java-based compiler, and a Rust-based compiler. The R compiler, written in R itself, poses challenges in terms of performance and maintainability. We evaluate designs of the compilers, their trade-offs, and performance characteristics. The Rust version outperforms the Java version, which itself outperforms the R version.</p>
-                            </div>
-                            <div id="bibtex1" class="bibtex-content" style="display: none;">
-                                <pre>@inproceedings{donatbouillud_comparing_2025,
-    title = {{Comparing R Bytecode Compilers Written in R, Java, and Rust}},
-    author = {Donat-Bouillud, Pierre and Křikava, Filip and Hain, Jakob and Plodek, Adam and Vitek, Jan},
-    year = {2025},
-    booktitle = {{Companion Proceedings of the 9th International Conference on the Art, Science, and Engineering of Programming (Programming 2025)}},
-    editor = {Edwards, Jonathan and Perera, Roly and Petricek, Tomas},
-    publisher = {Schloss Dagstuhl -- Leibniz-Zentrum für Informatik},
-    series = {{Open Access Series in Informatics (OASIcs)}},
-    location = {Dagstuhl, Germany},
-    doi = {10.4230/OASIcs.Programming.2025.1},
-    isbn = {978-3-95977-382-9},
-    pages = {1:1--1:6},
-    url = {https://drops.dagstuhl.de/entities/document/10.4230/OASIcs.Programming.2025.1},
-    volume = {134},
-}</pre>
-                            </div>
-                        </div>
-
-                        <div class="publication-item">
-                            <div class="publication-links">
-                                <a href="https://doi.org/10.1145/3759548.3763370" target="_blank" class="pub-link">Link</a>
+                                <a href="publications/kocourek_copyandpatch_2025.pdf" target="_blank" class="pub-link">PDF</a>
                                 <a href="https://doi.org/10.1145/3759548.3763370" target="_blank" class="pub-link secondary">DOI</a>
                                 <button class="pub-link secondary" onclick="showBibtex('bibtex2')">BibTeX</button>
                             </div>
-                            <div class="publication-title">Copy-and-Patch Just-in-Time Compiler for R</div>
+                            <div class="publication-title"><span class="research-dot tools-languages"></span>Copy-and-Patch Just-in-Time Compiler for R</div>
                             <div class="publication-authors">M. Kocourek, F. Křikava, J. Vitek</div>
                             <div class="publication-venue">Proceedings of the 17th ACM SIGPLAN International Workshop on Virtual Machines and Intermediate Languages, 2025</div>
                             <div id="abstract2" class="publication-abstract">
@@ -286,7 +265,7 @@
                                 <a href="https://doi.org/10.1145/3746059.3747646" target="_blank" class="pub-link secondary">DOI</a>
                                 <button class="pub-link secondary" onclick="showBibtex('bibtex_new1')">BibTeX</button>
                             </div>
-                            <div class="publication-title">Denicek: Computational Substrate for Document-Oriented End-User Programming</div>
+                            <div class="publication-title"><span class="research-dot tools-languages"></span>Denicek: Computational Substrate for Document-Oriented End-User Programming</div>
                             <div class="publication-authors">T. Petříček, J. Edwards</div>
                             <div class="publication-venue">Proceedings of the 38th Annual ACM Symposium on User Interface Software and Technology, 2025</div>
                             <div id="abstract_new1" class="publication-abstract">
@@ -313,13 +292,7 @@
                         </div>
 
                         <div class="publication-item">
-                            <div class="publication-title">Emotions in the Exegetical Method of Chrysostom from a Data Processing Perspective</div>
-                            <div class="publication-authors">V. Ježek</div>
-                            <div class="publication-venue">Christanskoye Chtenye, April 2025 </div>
-                        </div>
-
-                        <div class="publication-item">
-                            <div class="publication-title">Ethics of Sentiment Analysis and Theology</div>
+                            <div class="publication-title"><span class="research-dot data-science"></span>Ethics of Sentiment Analysis and Theology</div>
                             <div class="publication-authors">V. Ježek</div>
                             <div class="publication-venue">HTS Teologiese Studies/Theological Studies, April 2025 </div>
                         </div>
@@ -328,7 +301,7 @@
                             <div class="publication-links">
                                 <button class="pub-link secondary" onclick="showBibtex('bibtex_jezek1')">BibTeX</button>
                             </div>
-                            <div class="publication-title">Gregory of Nyssa and the Witch of Endor in the Context of Machine Learning</div>
+                            <div class="publication-title"><span class="research-dot data-science"></span>Gregory of Nyssa and the Witch of Endor in the Context of Machine Learning</div>
                             <div class="publication-authors">V. Ježek</div>
                             <div class="publication-venue">Rocznik Teologiczny (Theological Yearbook), 67(3), pp. 451–472, 2025</div>
                             <div id="abstract_jezek1" class="publication-abstract">
@@ -353,7 +326,7 @@
                                 <a href="https://doi.org/10.1007/978-3-032-06847-7_7" target="_blank" class="pub-link secondary">DOI</a>
                                 <button class="pub-link secondary" onclick="showBibtex('bibtex_d8')">BibTeX</button>
                             </div>
-                            <div class="publication-title">Locating Concurrency Errors in Windows .NET Applications by Fuzzing over Thread Schedules</div>
+                            <div class="publication-title"><span class="research-dot tools-languages"></span>Locating Concurrency Errors in Windows .NET Applications by Fuzzing over Thread Schedules</div>
                             <div class="publication-authors">F. Kliber, P. Parízek</div>
                             <div class="publication-venue">31st International Symposium on Model Checking Software (SPIN 2025)</div>
                             <div id="abstract_d8" class="publication-abstract">
@@ -376,11 +349,11 @@
 
                         <div class="publication-item">
                             <div class="publication-links">
-                                <a href="https://doi.org/10.1145/3736731.3746156" target="_blank" class="pub-link">Link</a>
+                                <a href="publications/donatbouillud_r4r_2025.pdf" target="_blank" class="pub-link">PDF</a>
                                 <a href="https://doi.org/10.1145/3736731.3746156" target="_blank" class="pub-link secondary">DOI</a>
                                 <button class="pub-link secondary" onclick="showBibtex('bibtex3')">BibTeX</button>
                             </div>
-                            <div class="publication-title">R4R: Reproducibility for R</div>
+                            <div class="publication-title"><span class="research-dot tools-languages"></span>R4R: Reproducibility for R</div>
                             <div class="publication-authors">P. Donat-Bouillud, F. Křikava, S. Krynski, J. Vitek</div>
                             <div class="publication-venue">Proceedings of the 3rd ACM Conference on Reproducibility and Replicability, 2025</div>
                             <div id="abstract3" class="publication-abstract">
@@ -405,11 +378,11 @@
 
                         <div class="publication-item">
                             <div class="publication-links">
-                                <a href="https://doi.org/10.1145/3759429.3762633" target="_blank" class="pub-link">Link</a>
+                                <a href="publications/jakubovic_unix_smalltalk_2025.pdf" target="_blank" class="pub-link">PDF</a>
                                 <a href="https://doi.org/10.1145/3759429.3762633" target="_blank" class="pub-link secondary">DOI</a>
                                 <button class="pub-link secondary" onclick="showBibtex('bibtex_new2')">BibTeX</button>
                             </div>
-                            <div class="publication-title">The Unix Executable as a Smalltalk Method: And Its Implications for Unix-Smalltalk Unification</div>
+                            <div class="publication-title"><span class="research-dot misc"></span>The Unix Executable as a Smalltalk Method: And Its Implications for Unix-Smalltalk Unification</div>
                             <div class="publication-authors">J. Jakubovic</div>
                             <div class="publication-venue">ACM SIGPLAN International Symposium on New Ideas, New Paradigms, and Reflections on Programming and Software (Onward! 2025)</div>
                             <div id="abstract_new2" class="publication-abstract">
@@ -439,7 +412,7 @@
                                 <a href="https://doi.org/10.4230/OASIcs.Programming.2025.24" target="_blank" class="pub-link secondary">DOI</a>
                                 <button class="pub-link secondary" onclick="showBibtex('bibtex4')">BibTeX</button>
                             </div>
-                            <div class="publication-title">Toward a Typed Intermediate Language for R</div>
+                            <div class="publication-title"><span class="research-dot type-systems"></span>Toward a Typed Intermediate Language for R</div>
                             <div class="publication-authors">M. Laurent, J. Hain, F. Krikava, S. Krynski, J. Vitek</div>
                             <div class="publication-venue">Companion Proceedings of the 9th International Conference on the Art, Science, and Engineering of Programming (Programming 2025)</div>
                             <div id="abstract4" class="publication-abstract">
@@ -473,7 +446,7 @@
                                 <a href="https://doi.org/10.1145/3639477.3639739" target="_blank" class="pub-link secondary">DOI</a>
                                 <button class="pub-link secondary" onclick="showBibtex('bibtex_d14')">BibTeX</button>
                             </div>
-                            <div class="publication-title">Data Lineage Analysis for Enterprise Applications by Manta: The Story of Java and C# Scanners</div>
+                            <div class="publication-title"><span class="research-dot tools-languages"></span>Data Lineage Analysis for Enterprise Applications by Manta: The Story of Java and C# Scanners</div>
                             <div class="publication-authors">P. Parízek, L. Hermann</div>
                             <div class="publication-venue">46th International Conference on Software Engineering: Software Engineering in Practice (ICSE-SEIP 2024)</div>
                             <div id="abstract_d14" class="publication-abstract">
@@ -498,7 +471,7 @@
                                 <a href="https://doi.org/10.1145/3656421" target="_blank" class="pub-link secondary">DOI</a>
                                 <button class="pub-link secondary" onclick="showBibtex('bibtex5')">BibTeX</button>
                             </div>
-                            <div class="publication-title">Decidable Subtyping of Existential Types for Julia</div>
+                            <div class="publication-title"><span class="research-dot type-systems"></span>Decidable Subtyping of Existential Types for Julia</div>
                             <div class="publication-authors">J. Belyakova, B. Chung, R. Tate, J. Vitek</div>
                             <div class="publication-venue">Proc. ACM Program. Lang. 8(PLDI), 2024</div>
                             <div id="abstract5" class="publication-abstract">
@@ -521,37 +494,11 @@
 
                         <div class="publication-item">
                             <div class="publication-links">
-                                <a href="https://doi.org/10.1145/3649853" target="_blank" class="pub-link">Link</a>
-                                <a href="https://doi.org/10.1145/3649853" target="_blank" class="pub-link secondary">DOI</a>
-                                <button class="pub-link secondary" onclick="showBibtex('bibtex_d12')">BibTeX</button>
-                            </div>
-                            <div class="publication-title">Degrees of Separation: A Flexible Type System for Safe Concurrency</div>
-                            <div class="publication-authors">Y. Xu, A. Boruch-Gruszecki, M. Odersky</div>
-                            <div class="publication-venue">Proc. ACM Program. Lang. 8(OOPSLA1), 2024</div>
-                            <div id="abstract_d12" class="publication-abstract">
-                                <p class="abstract-text">Data races have long been a notorious problem in concurrent programming. They are hard to detect, and lead to non-deterministic behaviours. There has been a lot of interest in type systems that statically guarantee data race freedom. Significant progress has been made in this area, and these type systems are increasingly usable and practical. However, their adoption in mainstream programming languages is still limited, which is largely attributed to their strict alias prevention principles that obstruct the usage of existing programming patterns. This is a deterrent to the migration of existing code bases. To tackle this problem, we propose Capture Separation Calculus (System CSC), a calculus that models fork-join parallelism and statically prevents data races while being compatible with established programming patterns. It follows a control-as-you-need philosophy: by default, aliases are allowed, but they are tracked in the type system. When data races are a concern, the tracked aliases are controlled to prevent data-race-prone patterns. We study the formal properties of System CSC. Type soundness is proven via the standard progress and preservation theorems. Additionally, we formally verify the data race freedom property of System CSC by proving that the reduction of a well-typed program is confluent.</p>
-                            </div>
-                            <div id="bibtex_d12" class="bibtex-content" style="display: none;">
-                                <pre>@article{xu_degrees_2024,
-    title = {{Degrees of Separation: A Flexible Type System for Safe Concurrency}},
-    author = {Xu, Yichen and Boruch-Gruszecki, Aleksander and Odersky, Martin},
-    year = {2024},
-    journal = {Proc. ACM Program. Lang.},
-    volume = {8},
-    number = {OOPSLA1},
-    pages = {1181--1207},
-    doi = {10.1145/3649853},
-}</pre>
-                            </div>
-                        </div>
-
-                        <div class="publication-item">
-                            <div class="publication-links">
-                                <a href="https://doi.org/10.1145/3689751" target="_blank" class="pub-link">Link</a>
+                                <a href="publications/boruchgruszecki_gradient_2024.pdf" target="_blank" class="pub-link">PDF</a>
                                 <a href="https://doi.org/10.1145/3689751" target="_blank" class="pub-link secondary">DOI</a>
                                 <button class="pub-link secondary" onclick="showBibtex('bibtex_new3')">BibTeX</button>
                             </div>
-                            <div class="publication-title">Gradient: Gradual Compartmentalization via Object Capabilities Tracked in Types</div>
+                            <div class="publication-title"><span class="research-dot type-systems"></span>Gradient: Gradual Compartmentalization via Object Capabilities Tracked in Types</div>
                             <div class="publication-authors">A. Boruch-Gruszecki, A. Ghosn, M. Payer, C. Pit-Claudel</div>
                             <div class="publication-venue">Proceedings of the ACM on Programming Languages, Volume 8, Issue OOPSLA, 2024</div>
                             <div id="abstract_new3" class="publication-abstract">
@@ -571,31 +518,6 @@
                             </div>
                         </div>
 
-                        <div class="publication-item">
-                            <div class="publication-links">
-                                <a href="publications/castagna_polymorphic_2024.pdf" target="_blank" class="pub-link">PDF</a>
-                                <a href="https://doi.org/10.1145/3632882" target="_blank" class="pub-link secondary">DOI</a>
-                                <button class="pub-link secondary" onclick="showBibtex('bibtex_d10')">BibTeX</button>
-                            </div>
-                            <div class="publication-title">Polymorphic Type Inference for Dynamic Languages</div>
-                            <div class="publication-authors">G. Castagna, M. Laurent, K. Nguyen</div>
-                            <div class="publication-venue">Proc. ACM Program. Lang. 8(POPL), 2024</div>
-                            <div id="abstract_d10" class="publication-abstract">
-                                <p class="abstract-text">We present a type system that combines, in a controlled way, first-order polymorphism with intersection types, union types, and subtyping, and prove its safety. We then define a type reconstruction algorithm that is sound and terminating. This yields a system in which unannotated functions are given polymorphic types (thanks to Hindley-Milner) that can express the overloaded behavior of the functions they type (thanks to the intersection introduction rule) and that are deduced by applying advanced techniques of type narrowing (thanks to the union elimination rule). This makes the system a prime candidate to type dynamic languages.</p>
-                            </div>
-                            <div id="bibtex_d10" class="bibtex-content" style="display: none;">
-                                <pre>@article{castagna_polymorphic_2024,
-    title = {{Polymorphic Type Inference for Dynamic Languages}},
-    author = {Castagna, Giuseppe and Laurent, Mickaël and Nguyen, Kim},
-    year = {2024},
-    journal = {Proc. ACM Program. Lang.},
-    volume = {8},
-    number = {POPL},
-    pages = {1179--1210},
-    doi = {10.1145/3632882},
-}</pre>
-                            </div>
-                        </div>
 
                         <div class="publication-item">
                             <div class="publication-links">
@@ -603,7 +525,7 @@
                                 <a href="https://doi.org/10.4230/LIPIcs.ECOOP.2024.13" target="_blank" class="pub-link secondary">DOI</a>
                                 <button class="pub-link secondary" onclick="showBibtex('bibtex_new4')">BibTeX</button>
                             </div>
-                            <div class="publication-title">Pure Methods for roDOT</div>
+                            <div class="publication-title"><span class="research-dot type-systems"></span>Pure Methods for roDOT</div>
                             <div class="publication-authors">V. Dort, Y. Li, O. Lhoták, P. Parízek</div>
                             <div class="publication-venue">38th European Conference on Object-Oriented Programming (ECOOP 2024)</div>
                             <div id="abstract_new4" class="publication-abstract">
@@ -631,7 +553,7 @@
                                 <a href="https://doi.org/10.48550/arXiv.2402.14625" target="_blank" class="pub-link secondary">DOI</a>
                                 <button class="pub-link secondary" onclick="showBibtex('bibtex_new5')">BibTeX</button>
                             </div>
-                            <div class="publication-title">Putting the Count Back Into Accountability: An Analysis of Transparency Data About the Sexual Exploitation of Minors</div>
+                            <div class="publication-title"><span class="research-dot data-science"></span>Putting the Count Back Into Accountability: An Analysis of Transparency Data About the Sexual Exploitation of Minors</div>
                             <div class="publication-authors">R. Grimm</div>
                             <div class="publication-venue">arXiv preprint, 2024</div>
                             <div id="abstract_new5" class="publication-abstract">
@@ -653,11 +575,11 @@
 
                         <div class="publication-item">
                             <div class="publication-links">
-                                <a href="https://doi.org/10.1145/3689490.3690404" target="_blank" class="pub-link">Link</a>
+                                <a href="publications/krynski_reducing_2024.pdf" target="_blank" class="pub-link">PDF</a>
                                 <a href="https://doi.org/10.1145/3689490.3690404" target="_blank" class="pub-link secondary">DOI</a>
                                 <button class="pub-link secondary" onclick="showBibtex('bibtex6')">BibTeX</button>
                             </div>
-                            <div class="publication-title">Reducing Feedback Pollution</div>
+                            <div class="publication-title"><span class="research-dot tools-languages"></span>Reducing Feedback Pollution</div>
                             <div class="publication-authors">S. Krynski, M. Štěpánek, F. Říha, F. Křikava, J. Vitek</div>
                             <div class="publication-venue">Proceedings of the 16th ACM SIGPLAN International Workshop on Virtual Machines and Intermediate Languages, 2024</div>
                             <div id="abstract6" class="publication-abstract">
@@ -681,32 +603,7 @@
                         </div>
 
                         <div class="publication-item">
-                            <div class="publication-links">
-                                <a href="publications/edwards_schema_2024.pdf" target="_blank" class="pub-link">PDF</a>
-                                <a href="https://doi.org/10.22152/programming-journal.org/2025/9/2" target="_blank" class="pub-link secondary">DOI</a>
-                                <button class="pub-link secondary" onclick="showBibtex('bibtex_d11')">BibTeX</button>
-                            </div>
-                            <div class="publication-title">Schema Evolution in Interactive Programming Systems</div>
-                            <div class="publication-authors">J. Edwards, T. Petříček, T. van der Storm, G. Litt</div>
-                            <div class="publication-venue">The Art, Science, and Engineering of Programming, 9(1), 2024</div>
-                            <div id="abstract_d11" class="publication-abstract">
-                                <p class="abstract-text">Many improvements to programming have come from shortening feedback loops, for example with Integrated Development Environments, Unit Testing, Live Programming, and Distributed Version Control. A barrier to feedback that deserves greater attention is Schema Evolution. When requirements on the shape of data change then existing data must be migrated into the new shape, and existing code must be modified to suit. Currently these adaptations are often performed manually, or with ad hoc scripts. Manual schema evolution not only delays feedback but since it occurs outside the purview of version control tools it also interrupts collaboration. Schema evolution has long been studied in databases. We observe that the problem also occurs in non-database contexts that have been less studied. We present a suite of challenge problems exemplifying this range of contexts, including traditional database programming as well as live front-end programming, model-driven development, and collaboration in computational documents. We systematize these various contexts by defining a set of layers and dimensions of schema evolution. We offer these challenge problems to ground future research on the general problem of schema evolution in interactive programming systems and to serve as a basis for evaluating the results of that research. We hope that better support for schema evolution will make programming more live and collaboration more fluid.</p>
-                            </div>
-                            <div id="bibtex_d11" class="bibtex-content" style="display: none;">
-                                <pre>@article{edwards_schema_2024,
-    title = {{Schema Evolution in Interactive Programming Systems}},
-    author = {Edwards, Jonathan and Petricek, Tomas and van der Storm, Tijs and Litt, Geoffrey},
-    year = {2024},
-    journal = {The Art, Science, and Engineering of Programming},
-    volume = {9},
-    number = {1},
-    doi = {10.22152/programming-journal.org/2025/9/2},
-}</pre>
-                            </div>
-                        </div>
-
-                        <div class="publication-item">
-                            <div class="publication-title">Sentiment without Emotion: Sentiment Analysis and Theology</div>
+                            <div class="publication-title"><span class="research-dot data-science"></span>Sentiment without Emotion: Sentiment Analysis and Theology</div>
                             <div class="publication-authors">V. Ježek</div>
                             <div class="publication-venue">Conference papers from the Phaicon conference 2024 "Analogia", March 2025</div>
                         </div>
@@ -717,7 +614,7 @@
                                 <a href="https://doi.org/10.4230/LIPIcs.ECOOP.2024.27" target="_blank" class="pub-link secondary">DOI</a>
                                 <button class="pub-link secondary" onclick="showBibtex('bibtex7')">BibTeX</button>
                             </div>
-                            <div class="publication-title">The Fault in Our Stars: Designing Reproducible Large-scale Code Analysis Experiments</div>
+                            <div class="publication-title"><span class="research-dot tools-languages"></span>The Fault in Our Stars: Designing Reproducible Large-scale Code Analysis Experiments</div>
                             <div class="publication-authors">P. Maj, S. Muroya, K. Siek, L. Di Grazia, J. Vitek</div>
                             <div class="publication-venue">ECOOP 2024</div>
                             <div id="abstract7" class="publication-abstract">
@@ -737,32 +634,6 @@
                             </div>
                         </div>
 
-                        <div class="publication-item">
-                            <div class="publication-links">
-                                <a href="https://doi.org/10.1145/3632890" target="_blank" class="pub-link">Link</a>
-                                <a href="https://doi.org/10.1145/3632890" target="_blank" class="pub-link secondary">DOI</a>
-                                <button class="pub-link secondary" onclick="showBibtex('bibtex_d13')">BibTeX</button>
-                            </div>
-                            <div class="publication-title">When Subtyping Constraints Liberate: A Novel Type Inference Approach for First-Class Polymorphism</div>
-                            <div class="publication-authors">L. Parreaux, A. Boruch-Gruszecki, A. Fan, C. Y. Chau</div>
-                            <div class="publication-venue">Proc. ACM Program. Lang. 8(POPL), 2024</div>
-                            <div id="abstract_d13" class="publication-abstract">
-                                <p class="abstract-text">Type inference in the presence of first-class or "impredicative" second-order polymorphism à la System F has been an active research area for several decades, with original works dating back to the end of the 80s. Yet, until now many basic problems remain open, such as how to type check expressions like (λx.(x 123, x True)) id reliably. We show that a type inference approach based on multi-bounded polymorphism, a form of implicit polymorphic subtyping with multiple lower and upper bounds, can help us resolve most of these problems in a uniquely simple and regular way. We define F≤, a declarative type system derived from the existing theory of implicit coercions by Cretin and Rémy (LICS 2014), and we introduce SuperF, a novel algorithm to infer polymorphic multi-bounded F≤ types while checking user type annotations written in the syntax of System F. We use a recursion-avoiding heuristic to guarantee termination of type inference at the cost of rejecting some valid programs, which thankfully rarely triggers in practice. We show that SuperF is vastly more powerful than all first-class-polymorphic type inference systems proposed so far, significantly advancing the state of the art in type inference for general-purpose programming languages.</p>
-                            </div>
-                            <div id="bibtex_d13" class="bibtex-content" style="display: none;">
-                                <pre>@article{parreaux_subtyping_2024,
-    title = {{When Subtyping Constraints Liberate: A Novel Type Inference Approach for First-Class Polymorphism}},
-    author = {Parreaux, Lionel and Boruch-Gruszecki, Aleksander and Fan, Andong and Chau, Chun Yin},
-    year = {2024},
-    journal = {Proc. ACM Program. Lang.},
-    volume = {8},
-    number = {POPL},
-    pages = {1418--1450},
-    doi = {10.1145/3632890},
-}</pre>
-                            </div>
-                        </div>
-
                         <!-- ==================== 2023 ==================== -->
                         <h3 class="publication-year-header">2023</h3>
 
@@ -772,7 +643,7 @@
                                 <a href="https://doi.org/10.1145/3622839" target="_blank" class="pub-link secondary">DOI</a>
                                 <button class="pub-link secondary" onclick="showBibtex('bibtex_d19')">BibTeX</button>
                             </div>
-                            <div class="publication-title">Reusing Just-in-Time Compiled Code</div>
+                            <div class="publication-title"><span class="research-dot tools-languages"></span>Reusing Just-in-Time Compiled Code</div>
                             <div class="publication-authors">M. K. Mehta, S. Krynski, H. Musso Gualandi, M. Thakur, J. Vitek</div>
                             <div class="publication-venue">Proc. ACM Program. Lang. 7(OOPSLA2), 2023</div>
                             <div id="abstract_d19" class="publication-abstract">
@@ -818,7 +689,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 text-md-end">
-                    <p class="mb-0">&copy; 2026 Ch-RiGiD. All rights reserved.</p>
+                    <p class="mb-0">&copy; 2026 ChRiGiD. All rights reserved.</p>
                 </div>
             </div>
         </div>
@@ -840,17 +711,14 @@
         function toggleAbstract(id) {
             var abstractDiv = document.getElementById(id);
             var abstractText = abstractDiv.querySelector('.abstract-text');
-            var toggleBtn = abstractDiv.querySelector('.abstract-toggle');
 
             if (abstractText.classList.contains('abstract-truncated')) {
                 abstractText.classList.remove('abstract-truncated');
                 abstractText.style.maxHeight = 'none';
-                toggleBtn.textContent = 'Show less';
             } else {
                 abstractText.classList.add('abstract-truncated');
                 var lineHeight = parseFloat(window.getComputedStyle(abstractText).lineHeight);
                 abstractText.style.maxHeight = (lineHeight * 2) + 'px';
-                toggleBtn.textContent = 'Show more';
             }
         }
 
@@ -866,16 +734,9 @@
                     abstract.classList.add('abstract-truncated');
                     abstract.style.maxHeight = maxHeight + 'px';
 
-                    // Add toggle button if it doesn't exist
-                    if (!abstractDiv.querySelector('.abstract-toggle')) {
-                        var toggleBtn = document.createElement('button');
-                        toggleBtn.className = 'abstract-toggle';
-                        toggleBtn.textContent = 'Show more';
-                        toggleBtn.onclick = function() {
-                            toggleAbstract(abstractDiv.id);
-                        };
-                        abstractDiv.appendChild(toggleBtn);
-                    }
+                    abstract.onclick = function() {
+                        toggleAbstract(abstractDiv.id);
+                    };
                 }
             });
         });

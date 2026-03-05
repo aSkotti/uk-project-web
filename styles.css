@@ -6,7 +6,30 @@
     --text-dark: #2c3e50;
     --text-muted: #6c757d;
     --white: #ffffff;
+    --color-data-science: #2E86C1;
+    --color-type-systems: #27AE60;
+    --color-tools-languages: #E67E22;
+    --color-misc: #95A5A6;
 }
+
+/* Research direction color dots */
+.research-dot {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+.research-dot.data-science { background-color: var(--color-data-science); }
+.research-dot.type-systems { background-color: var(--color-type-systems); }
+.research-dot.tools-languages { background-color: var(--color-tools-languages); }
+.research-dot.misc { background-color: var(--color-misc); }
+
+.highlight-card.data-science { border-top: 4px solid var(--color-data-science); }
+.highlight-card.type-systems { border-top: 4px solid var(--color-type-systems); }
+.highlight-card.tools-languages { border-top: 4px solid var(--color-tools-languages); }
 
 /* Basic Setup */
 body {
@@ -106,7 +129,7 @@ html {
 }
 
 .hero-text-wrapper {
-    max-width: 750px;
+    max-width: 100%;
 }
 
 .hero h1 {
@@ -133,7 +156,7 @@ html {
     line-height: 1.75;
     margin-bottom: 0;
     font-weight: 400;
-    max-width: 700px;
+    max-width: 100%;
 }
 
 .hero-actions {
@@ -457,6 +480,7 @@ html {
 .person-img img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .person-name {
@@ -633,8 +657,8 @@ html {
 
 .publication-item {
     background: white;
-    padding: 1rem 1.5rem;
-    margin-bottom: 1rem;
+    padding: 0.6rem 1.5rem;
+    margin-bottom: 0.5rem;
     border-radius: 4px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
     position: relative;
@@ -659,16 +683,16 @@ html {
     color: var(--primary-red);
     font-weight: 500;
     font-size: 0.9rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
 }
 
 .publication-abstract {
     color: var(--text-dark);
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
     font-size: 0.9rem;
     line-height: 1.7;
-    padding: 1rem;
+    padding: 0.75rem 1rem;
     background: #f8f9fa;
     border-radius: 4px;
 }
@@ -681,6 +705,7 @@ html {
     overflow: hidden;
     transition: max-height 0.3s ease;
     word-wrap: break-word;
+    cursor: pointer;
 }
 
 .abstract-text.abstract-truncated {
@@ -690,16 +715,19 @@ html {
 }
 
 .abstract-text.abstract-truncated::after {
-    content: '...';
+    content: '... more';
     position: absolute;
     right: 0;
     bottom: 0;
     background: #f8f9fa;
     padding-left: 0.5em;
+    font-weight: 600;
+    color: var(--primary-red);
 }
 
 .abstract-toggle {
-    margin-top: 0.5rem;
+    display: inline;
+    margin-left: 0.3rem;
     background: none;
     border: none;
     color: var(--primary-red);
@@ -802,14 +830,14 @@ html {
 /* Software Grid - Pinterest Masonry Layout */
 .software-grid {
     column-count: 1;
-    column-gap: 1.5rem;
+    column-gap: 1rem;
     column-fill: balance;
 }
 
 .software-card-wrapper {
     break-inside: avoid;
     page-break-inside: avoid;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.75rem;
     display: inline-block;
     width: 100%;
 }
@@ -818,7 +846,7 @@ html {
 .software-card {
     background: white;
     border-radius: 8px;
-    padding: 2rem;
+    padding: 1rem 1.5rem;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
     text-align: left;
     width: 100%;
@@ -850,7 +878,7 @@ html {
 
 .software-card p {
     flex-grow: 1;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .software-buttons {
