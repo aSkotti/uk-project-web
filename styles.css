@@ -216,7 +216,7 @@ html {
 /* About Section */
 .about-section {
     background: white;
-    padding: 6rem 0;
+    padding: 2.5rem 0 4rem;
     position: relative;
     overflow: hidden;
 }
@@ -319,12 +319,61 @@ html {
 
 /* Highlights Section */
 .highlights-section {
-    margin-top: 4rem;
+    margin-top: 1rem;
+}
+
+/* Home page rhythm tweaks */
+.content-section.research-section {
+    padding-bottom: 1.75rem;
+}
+
+.content-section.news-section {
+    padding-top: 3.5rem;
+    padding-bottom: 4rem;
+}
+
+.content-section.join-section {
+    padding-top: 4rem;
+}
+
+/* New about summary band (no cards) */
+.about-summary {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.9fr);
+    gap: 3rem;
+    padding: 2.5rem 2.75rem 2.75rem;
+    background: var(--light-beige);
+    border-radius: 20px;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.06);
+}
+
+.about-summary-metrics h3,
+.about-summary-text h3 {
+    color: var(--primary-red);
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgba(196, 30, 58, 0.35);
+}
+
+.about-summary-text p {
+    color: var(--text-dark);
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 0.85rem;
+    text-align: justify;
+}
+
+.about-summary-text p:last-child {
+    margin-bottom: 0;
 }
 
 .highlights-grid {
     display: grid;
-    grid-template-columns: 35% 65%;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-top: 2rem;
 }
@@ -1097,6 +1146,31 @@ a {
     .contact-info, .map-container {
         max-width: 100%;
     }
+
+    /* Publications: prevent action buttons from covering titles */
+    .publication-title {
+        padding-right: 0;
+    }
+
+    .publication-links {
+        position: static;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        right: auto;
+        top: auto;
+        justify-content: flex-start;
+    }
+
+    .publication-item {
+        overflow: visible;
+    }
+
+    /* Stack about summary band on tablets/small laptops */
+    .about-summary {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2.25rem 2rem 2.5rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1247,5 +1321,62 @@ a {
     .people-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 0.5rem;
+    }
+
+    /* Mobile: prevent long software titles from cutting off buttons */
+    .software-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .software-title {
+        flex-shrink: 1;
+        min-width: 0;
+        white-space: normal;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+        text-align: left;
+        font-size: 1.35rem;
+        line-height: 1.25;
+    }
+
+    .software-buttons {
+        flex-wrap: wrap;
+        flex-shrink: 1;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .software-authors {
+        text-align: left;
+    }
+
+    .software-card p {
+        text-align: justify;
+    }
+
+    .software-buttons .softw-link {
+        white-space: nowrap;
+    }
+
+    /* Tighter about summary band on phones */
+    .about-summary {
+        padding: 2rem 1.5rem 2.25rem;
+    }
+}
+
+/* Mid-size screens (e.g., small laptops, landscape tablets) */
+@media (max-width: 992px) {
+    /* Prevent pub titles from being hidden behind action buttons */
+    .publication-title {
+        padding-right: 0;
+    }
+
+    .publication-links {
+        position: static;
+        margin-top: 0.75rem;
+        margin-bottom: 0.5rem;
+        justify-content: flex-start;
     }
 }
